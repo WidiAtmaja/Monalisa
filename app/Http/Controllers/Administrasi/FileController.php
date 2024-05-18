@@ -27,9 +27,7 @@ class FileController extends Controller
 
 
         $fungsi = request('fungsi');
-        // $periode = request('periode');
-        // $kegiatan = request('kegiatan');
-        // $akun = request('akun');
+        // Ini Branch V.2.2
 
         $kegiatan = KegiatanAdministrasi::where('id', request('kegiatan'))->first();
         $akun = Akun::where('id', request('akun'))->first();
